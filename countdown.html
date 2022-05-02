@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	
 </head>
 <body>
 
@@ -24,8 +25,9 @@
 
 	<div class="countdown-contents">
 		<div class="countdown-circle">
-			<h1 style="font-size: 76px; margin: -12px;">20:00<h1>
-			<h1 style="font-size: 24px; margin: -28px;">minutes</h1></div>
+			<div style="font-size: 76px;" class="countdown" id="countdown"></div>
+			<div style="font-size: 24px;">minutes</div>
+		</div>
 		<h2>We’ll let you know when it’s time<br>
 		to head to CityMD West Village.</h2>
 
@@ -45,5 +47,36 @@
 		<img id="profile-icon" src="images/profile-icon.svg" alt="profile icon">
 	</div>
 
+
+	<script type="text/javascript">
+		function countdown( elementName, minutes, seconds ) {
+		    var element, endTime, hours, mins, msLeft, time;
+
+		    function twoDigits( n )
+		    {
+		        return (n <= 9 ? "0" + n : n);
+		    }
+
+		    function updateTimer()
+		    {
+		        msLeft = endTime - (+new Date);
+		        if ( msLeft < 1000 ) {
+		            element.innerHTML = "Time is up!";
+		        } else {
+		            time = new Date( msLeft );
+		            hours = time.getUTCHours();
+		            mins = time.getUTCMinutes();
+		            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+		            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+		        }
+		    }
+
+		    element = document.getElementById( elementName );
+		    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+		    updateTimer();
+		}
+		//trigger onlonad
+		countdown( "countdown", 20, 0 );
+	</script>
 </body>
 </html>

@@ -17,6 +17,11 @@ img:hover {
 	filter: invert(18%) sepia(96%) saturate(3164%) hue-rotate(242deg) brightness(75%) contrast(100%);
 }
 
+.content {
+	/*adds a little padding to the bottom of the page so the bottom bar doesn't block any page content*/
+	padding-bottom: 50px;
+}
+
 .searchBar {
 	height: 20%;
 	margin: 1rem;
@@ -42,13 +47,13 @@ img:hover {
 	border: 1px solid #A09DDD;
 	font-size: 14px;
 	border-radius: 4px;
+	font-family: Raleway, sans-serif;
 }
 
 #search-input:focus {
 	color: #372FBF;
 	border: 1px solid;
 	outline-color: #372FBF;
-	font-family: Raleway, sans-serif;
 }
 
 ::placeholder {
@@ -168,7 +173,6 @@ button {
 }
 
 .wait-time-rectangle {
-	height: 175px;
 	width: 34.11%;
 	background-color: #D5E66D;
 	color: #372FBF;
@@ -245,6 +249,10 @@ button {
 .provider-visual {
 	display: flex;
     width: 100%;
+    background-color: #D5E66D;
+    margin-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .provider-info {
@@ -252,12 +260,14 @@ button {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .provider-icons {
 	width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 
 .provider-text {
@@ -265,8 +275,8 @@ button {
     display: flex;
     flex-direction: column;
     text-align: left;
-	padding-left: 16px;
-	padding-bottom: 8px;
+	padding: 16px;
+	box-sizing: border-box;
 }
 
 .three-icons {
@@ -312,16 +322,20 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 #provider-img {
-	width: 65.89%;
-	height: 175px;
+	width: 100%;
+	height: auto;
 	filter: none;
 	border-top-right-radius: 8px;
 }
 
+.provider-img-picture {
+	width: 65.89%;
+	line-height: 0;
+}
 .bottomNav {
 	position: fixed;
 	bottom: 0;
@@ -384,13 +398,15 @@ button {
 .heading-container {
 	font-size: 24px;
 	color: #372FBF;
-	padding-left: 2rem;
+	width: 100%;
+	text-align: center;
 }
 
 .heading-container-provider {
 	font-size: 24px;
 	color: #372FBF;
 	padding-left: 2rem;
+	padding-right: 2rem;
 	padding-top: 16px;
 	padding-bottom: 8px;
 }
