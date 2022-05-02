@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MedW8: Home</title>
+	<title>MedW8: CityMD West Village</title>
 	<link rel="stylesheet" type="text/css" href="medw8_styles.css"></link>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,9 @@
 </head>
 <body>
 	<div class="searchBar">
-		<img id="arrow-icon" src="images/arrow-icon.svg" alt="back arrow icon" style="height: 16px;">
+		<a href="home.html">
+			<img id="arrow-icon" src="images/arrow-icon.svg" alt="back arrow icon" style="height: 16px;">
+		</a>
 		<input id="search-input" placeholder="Search">
 		<img id="close-icon" src="images/close-icon.svg" alt="close icon">
 	</div>
@@ -26,7 +28,12 @@
 					<div class="wait-time-rectangle">
 						<div class="circle-minutes">10<br>minutes</div>
 					</div>
-					<img id="provider-img" src="images/provider-img.png" alt="exterior photo of CityMD West Village"> 
+					<picture>
+						<source media="(min-width:960px)" srcset="images/provider-img-large.png">
+						<source media="(min-width:768px)" srcset="images/provider-img-medium.png">
+						<img id="provider-img" src="images/provider-img.png" alt="exterior photo of CityMD West Village">	
+					</picture>
+					<!--<img id="provider-img" src="images/provider-img.png" alt="exterior photo of CityMD West Village">-->
 				</div>
 			<div class="provider-text">
 				<div class="provider-icons">
@@ -58,14 +65,18 @@
 								<span class="info-content">Urgent Care</span>
 							</p>
 					</div>
-				<div class="bottom-button" style="margin: auto;">Begin Check In</div>
+				<a href="log-in.html">
+					<div class="bottom-button" style="margin: auto;">Begin Check In</div>
+				</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="bottomNav">
-		<img id="home-icon-active" src="images/home-icon.svg" alt="home icon">
-		<img id="clock-icon" src="images/clock-icon.svg" alt="clock icon">
+		<a href="home.html">
+			<img id="home-icon-inactive" src="images/home-icon.svg" alt="home icon">
+		</a>
+		<img id="clock-icon" src="images/medw8-logo.png" alt="clock icon">
 		<img id="profile-icon" src="images/profile-icon.svg" alt="profile icon">
 	</div>
 
