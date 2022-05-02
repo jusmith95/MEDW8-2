@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MedW8: Care Form</title>
+	<link rel="stylesheet" type="text/css" href="medw8_styles.css"></link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="arrow-container">
+		<img id="arrow-icon" src="images/arrow-icon.svg" alt="back arrow icon">
+	</div>
+
+	<div class="heading-container">
+		Care Form
+	</div>
+
+	<div class="input-contents">
+		<select name="symptoms" id="symptoms" required>
+      		<option value="" disabled selected hidden>Symptoms</option>
+			<option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="allergice-reaction">Allergic Reaction</option>
+		    <option value="back-pain">Back Pain</option>
+		    <option value="broken-bone">Broken Bone</option>
+		</select>
+
+		<select name="severiy" id="severity" required>
+      		<option value="" disabled selected hidden>Severity</option>
+			<option value="1">1 (lowest)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10 (highest)</option>
+		</select>
+		<input id="info-input" placeholder="Tell us more...">
+
+		<select name="health-history" id="health-history" required style="margin-top: 38px";>
+      		<option value="" disabled selected hidden>Health History</option>
+			<option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="allergice-reaction">Allergic Reaction</option>
+		    <option value="back-pain">Back Pain</option>
+		    <option value="broken-bone">Broken Bone</option>
+		</select>
+
+		<select name="allergies" id="allergies" required>
+      		<option value="" disabled selected hidden>Allergies</option>
+			<option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="abdominal-pain">Abdominal Pain</option>
+		    <option value="allergice-reaction">Allergic Reaction</option>
+		    <option value="back-pain">Back Pain</option>
+		    <option value="broken-bone">Broken Bone</option>
+		</select>
+
+		<input id="info-input" placeholder="Additional info...">
+		<a href="confirmation.html">
+			<div class="bottom-button">Submit</div>
+		</a>
+	</div>
+
+	<div class="bottomNav">
+		<img id="home-icon-inactive" src="images/home-icon.svg" alt="home icon">
+		<img id="clock-icon" src="images/clock-icon.svg" alt="clock icon">
+		<img id="profile-icon" src="images/profile-icon.svg" alt="profile icon">
+	</div>
+
+</body>
+</html>
