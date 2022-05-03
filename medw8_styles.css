@@ -185,6 +185,10 @@ button {
 	text-align: center;
 }
 
+.rectangle-minutes {
+	font-size: 6vw;
+}
+
 .info {
 	width: 70%;
 	display: flex;
@@ -200,7 +204,6 @@ button {
 	margin: 0;
 	display: flex;
     justify-content: space-between;
-    margin-right: 16px;
 }
 
 .info-line-container {
@@ -239,6 +242,7 @@ button {
 	margin-top: 4px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
     background-color: white;
     color: #372FBF;
     border-radius: 8px;
@@ -250,7 +254,6 @@ button {
 	display: flex;
     width: 100%;
     background-color: #D5E66D;
-    margin-bottom: 10px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -259,15 +262,14 @@ button {
 	width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .provider-icons {
 	width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .provider-text {
@@ -277,6 +279,10 @@ button {
     text-align: left;
 	padding: 16px;
 	box-sizing: border-box;
+}
+
+.provider-specs {
+	margin-bottom: 24px;
 }
 
 .three-icons {
@@ -403,12 +409,13 @@ button {
 }
 
 .heading-container-provider {
-	font-size: 24px;
-	color: #372FBF;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 16px;
-	padding-bottom: 8px;
+    width: 93%;
+    font-size: 24px;
+    color: #372FBF;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 .input-contents {
@@ -464,7 +471,7 @@ button {
 }
 
 .bottom-button {
-	width: 327px;
+	max-width: 327px;
 	height: 42px;
 	color: white;
 	background-color: #372FBF;
