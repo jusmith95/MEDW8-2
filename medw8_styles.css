@@ -1,3 +1,7 @@
+body,html {
+	height: 100%;
+}
+
 body {
 	background-color: #F6F6F6;
 	margin: 0;
@@ -23,7 +27,6 @@ img:hover {
 }
 
 .searchBar {
-	height: 20%;
 	margin: 1rem;
 	margin-bottom: 0;
 	padding: 1rem;
@@ -390,7 +393,6 @@ button {
 /* LOG IN PAGE STARTS */
 
 .arrow-container {
-	height: 20%;
 	margin: 1rem;
 	margin-bottom: 0;
 	padding: 1rem;
@@ -471,7 +473,7 @@ button {
 }
 
 .bottom-button {
-	max-width: 327px;
+	width: 327px;
 	height: 42px;
 	color: white;
 	background-color: #372FBF;
