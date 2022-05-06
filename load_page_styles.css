@@ -10,13 +10,13 @@ body {
     justify-content: center;
     flex-direction: column;
     opacity: 0.95;
-    /* Added because centering not working */
-	padding-top: 200px;
+	padding-top: 20vh;
 }
 
 img {
 	width: 155px;
 	height: 156px;
+	margin-left: 23px;
 }
 
 p {
@@ -47,7 +47,7 @@ h1 {
 	font-size: 16px;
 	line-height: 42px;
 	text-align: center;
-    margin-top: 200px;
+	margin-top: 15vh;
 }
 
 .start-button:hover {
